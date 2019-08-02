@@ -2,10 +2,10 @@
 
 const mediaStreamContrains = {
     video: { //采集视频
-        frameRate: {min: 20},  //视频帧率最小20帧/s
-  	    width: {min: 640, ideal: 1280}, // 最小宽度 640, 理想宽度 1280
-  	    height: {min: 360, ideal: 720},
-  		aspectRatio: 16/9      
+        frameRate: {ideal: 5},  //视频帧率最小20帧/s
+  	    width: {ideal: 1920}, // 最小宽度 640, 理想宽度 1280
+  	    height: {ideal: 1080},
+        aspectRatio: 1/1,
     },
     audio:  { //采集音频
         echoCancellation: true,  //回音小消除
